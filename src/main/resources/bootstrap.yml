@@ -7,17 +7,19 @@ spring:
       uri: http://localhost:7000
       label: master
       profile: dev
-#      discovery:
+#     注册到Eureka
+#     discovery:
 #        enabled: true
 #        service-id: config-server
 #      username: hello
 #      password: 123456
 
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: config-server
-    password: config-server
+#   消息总线bus，可以通过bus控制是否更新配置
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: config-server
+#    password: config-server
 
 server:
   port: 8000
